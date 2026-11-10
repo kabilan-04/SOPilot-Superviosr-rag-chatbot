@@ -66,7 +66,7 @@ The server will output:
 2. **Safety Interceptor:** Detects unauthorized actions (e.g., tightening bolts, lock removal without sign-off) and injects unmissable warning banners.
 3. **Strict Grounding:** Sets `in_documents: false` if a question asks about a part or spec not found in the documents, completely eliminating dangerous torque/dimension hallucinations.
 
-## 5 5 question with output and also provied thescreenshots in the screenshot folder
+## 5 question with output and also provied thescreenshots in the screenshot folder
 1.what should I do when CNC-06 displays AL-104?
 Answered from documents
 Top up with ISO VG 68 oil to the MAX mark, then press RESET. The machine can continue after reset.
