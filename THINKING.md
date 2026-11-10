@@ -6,17 +6,19 @@
 
 ### Who the user is
 
-The primary user is Rajesh Murugan, a shift supervisor responsible supervising approximately 15–20 machinists and operators across rotating eight-hour shifts. His work involves keeping production moving, maintaining quality standards, and ensuring that operators follow workplace safety procedures.
+The primary user is Rajesh Murugan, a shop-floor shift supervisor responsible for coordinating approximately 15–20 machinists and machine operators across rotating eight-hour shifts.
+He oversees daily production activities, monitors machine performance, ensures product quality, and makes sure that workplace safety procedures are followed. His role requires him to make frequent decisions while balancing production targets, equipment availability, quality requirements, and employee safety.
+
 
 ### What he is trying to achieve
 
 Rajesh needs to:
 
-- **Keep machines running:** Reduce downtime and maintain line productivity and OEE.
-- **Maintain product quality:** Make sure inspection and sampling procedures follow the latest approved quality documents.
-- **Keep people safe:** Ensure that procedures such as Lockout/Tagout (LOTO) are followed correctly.
-- **Make quick decisions:** Find reliable answers to machine alarms, operating procedures, and quality questions without leaving the shop floor.
-- **Lead the shift effectively:** Give operators clear instructions and coordinate work across the bay.
+-  Reduce downtime and maintain line productivity and OEE.
+-  Make sure inspection and sampling procedures follow the latest approved quality documents.
+-  Ensure that procedures such as Lockout/Tagout (LOTO) are followed correctly.
+-  Find reliable answers to machine alarms, operating procedures, and quality questions without leaving the shop floor.
+-  Give operators clear instructions and coordinate work across the bay.
 
 ### Frustrations and constraints
 
