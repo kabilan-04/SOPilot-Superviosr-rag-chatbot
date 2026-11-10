@@ -149,3 +149,34 @@ I handled this by adding controls around retrieval and response generation rathe
 The critique also changed how I thought about usability. The supervisor is working in a noisy, time-sensitive environment, so a mobile-first interface with fixed controls and quick suggestions is more practical than expecting long prompts or relying on voice input in Phase 1.
 
 **Final takeaway:** SOPilot should be treated as a document-grounded support tool for supervisors, not as an authority that replaces approved procedures, maintenance expertise, or safety responsibilities. Its value comes from helping people find the right documented instruction quickly while being clear when the available documents do not support an answer.
+
+## 6. What I Would Build Next
+
+After developing the initial SOPilot prototype, I identified two improvements I would like to explore.
+
+### 6.1 Centralized Document Upload
+
+Manufacturing SOPs and policies are generally updated periodically, such as every three or six months, rather than every day.
+
+I would like to understand whether document uploading should be available through the mobile interface or restricted to a centralized computer.
+
+My initial preference is to avoid adding an upload option to the mobile chatbot. Instead, an authorized person could upload the updated SOP once through a central computer. The updated document would then be processed and made accessible to supervisors through the mobile application over the factory's network.
+
+This would keep the mobile interface focused on its primary purpose: helping supervisors retrieve information quickly without unnecessary options.
+
+**What I would ask the customer:**
+- Would you prefer SOP updates to be uploaded through a centralized computer rather than the mobile application?
+- Who would be responsible for uploading updated SOPs?
+- Would accessing the updated information through the same factory Wi-Fi be sufficient?
+
+### 6.2 Improving Conversation Handling Using LangChain
+
+Another improvement I would like to explore is integrating LangChain into SOPilot to improve conversation handling and memory.
+
+During testing, I noticed that after some interactions, the application sometimes repeats similar answers. This appears to be an application-side response-handling issue rather than something caused by the supervisor's questions.
+
+I would explore LangChain's conversation management and memory capabilities to understand whether they can help maintain relevant conversational context and improve how responses are handled across multiple interactions.
+
+**What I would ask the customer:**
+- Would supervisors benefit from the chatbot remembering the context of their previous questions during a conversation?
+- Should the chatbot treat every question independently or consider the previous conversation when answering follow-up questions?
