@@ -66,28 +66,36 @@ The server will output:
 2. **Safety Interceptor:** Detects unauthorized actions (e.g., tightening bolts, lock removal without sign-off) and injects unmissable warning banners.
 3. **Strict Grounding:** Sets `in_documents: false` if a question asks about a part or spec not found in the documents, completely eliminating dangerous torque/dimension hallucinations.
 
-## 5 question with output and also provied thescreenshots in the screenshot folder
-what should I do when CNC-06 displays AL-104?
+## 5 5 question with output and also provied thescreenshots in the screenshot folder
+1.what should I do when CNC-06 displays AL-104?
 Answered from documents
 Top up with ISO VG 68 oil to the MAX mark, then press RESET. The machine can continue after reset.
 📄MNT-MAN-CNC-02 Rev 02, 6. Common Alarms Current
 
 
 
-How many samples should I inspect for a lot of 200?
+2.How many samples should I inspect for a lot of 200?
 Answered from documents
 Inspect 5 samples for a lot of 200. Accept if minor defects are 0; reject if minor defects are 1 or more.
 📄QC-SOP-014 Rev 04, 4. Sampling Plan Current
 
 
-Who can remove a lock if an employee has left?
+3.Who can remove a lock if an employee has left?
 Answered from documents
 The Shift Supervisor must contact the lock owner by phone, and if the owner cannot be reached, both the Production Manager and the Safety Officer must authorise removal. The machine must be physically inspected to confirm it is safe to re-energise. The removal is recorded on form SF-12 Lock Removal Record, and the lock owner must be informed before they resume work on their next shift.
 📄SAF-SOP-003 Rev 05, 6. Removal of a Lock When the Owner Is Absent Current
-Test 4 – Turret Bolt Torque: Pass. SOPilot identifies the missing torque specification and avoids applying the chuck bolt value to turret bolts.
 
-What is the torque for TX-200 turret bolts?
+
+4.What is the torque for TX-200 turret bolts?
 Answered from documents
 The torque for the chuck mounting bolts is 110 Nm. The requested turret bolt torque is missing.
-📄MNT-MAN-CNC-02 Rev 02, 5. Chuck Mounting Bolt Torque Current
-Test 5 – Overtime Policy: Pass. SOPilot identifies the topic as unavailable in the documents and avoids hallucinating an answer.
+📄MNT-MAN-CNC-02 Rev 02, 5. Chuck Mounting Bolt Torque
+Observation: SOPilot correctly distinguishes chuck mounting bolts from turret bolts and does not apply the 110 Nm value to the wrong component.
+
+
+
+
+
+5.What is the overtime policy for the night shift?
+Not in the documents
+That isn't in the documents I have (quality, maintenance and safety procedures). Ask your supervisor or the relevant department.Observation: SOPilot correctly identifies that the information is unavailable and does not invent an overtime policy.
